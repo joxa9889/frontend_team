@@ -25,10 +25,11 @@
 }
 
 
+
+/* regester banner start */
 .registration-page .banner{
     background-color: rgba(242, 209, 70, 1);
-    height: auto;
-    overflow-y: hidden;
+
 }
 .registration-page .banner img{
     bottom: -15px;
@@ -38,9 +39,10 @@
     font-family: var(--register-head-font);
     color: var(--black);
     font-weight: 600;
-    font-size: 70px;
+    font-size: min(13vw, 70px);
 }
 
+/* end of banner */
 
 .registration-page .form-wrapper {
     background-color: #f0f0f0;
@@ -51,12 +53,12 @@
 .registration-page .registration-form .text-input-wrapper>label{
     color: #494949 !important;
     font-family: var(--register-body-font) !important;
-    font-size: 20px;
+    font-size: min(4.5vw, 20px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     left: 12px;
-    transform: translateY(20px);    
+    transform: translateY(22px);    
     transition: 250ms ease;
     pointer-events: none;
 
@@ -66,7 +68,7 @@
     height: 65px;
     color: #494949 !important;
     font-family: var(--register-body-font) !important;
-    font-size: 20px;
+
     font-style: normal;
     font-weight: 400;
 }
@@ -87,12 +89,30 @@
 .registration-page .text-input-wrapper>input:valid ~ label.text-input-label{
     transform: translateY(-25px);
     padding: 0 3px;
-    left: 20px;
+    color: var(--black) !important;
+    font-weight: 500;
 }
 
+.registration-page .registration-form .input-help-text{
+    color: #939393;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
-
-
+.registration-page .reg-form-select select{
+    height: 65px;
+    color: #494949 !important;
+    font-family: var(--register-body-font) !important;
+    font-size: min(4.5vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    outline: none;
+    border: #F5C24D 1px solid;
+    background-color: rgba(211, 211, 211, 1);
+}
 
 
 

@@ -11,18 +11,18 @@
 
     <div class="container registration-page">
         <!-- baner of the page start -->
-        <div class="banner d-flex justify-content-between pt-3">
-            <h1 class="ms-5 mt-2 ps-4 pt-4">РЕГИСТРАЦИЯ</h1>
-            <img class="position-relative" src="/img/registraion-page/registraion-header.svg" alt="">
+        <div class="banner d-flex flex-column flex-lg-row justify-content-between pt-3 overflow-hidden h-auto">
+            <h1 class="ms-lg-5 mt-2 ps-lg-4 pb-5 pb-lg-0 text-center pt-4">РЕГИСТРАЦИЯ</h1>
+            <img class="position-relative d-none d-lg-block" src="/img/registraion-page/registraion-header.svg" alt="">
         </div>
         <!-- baner of the page end -->
 
 
         <!-- registraion form start -->
-        <div class="form-wrapper px-5">
+        <div class="form-wrapper px-sm-3 px-md-5">
 
-            <form action="" class="registration-form px-5 pt-5">
-                <div class="row">
+            <form action="" class="registration-form px-4 px-sm-5 pt-5">
+                <div class="row row-gap-5 column-gap-2">
     
                     <div class="col text-input-wrapper position-relative d-flex flex-column">
                             <input required autocomplete="off" type="text" name="" id="first_name" class="ps-2">
@@ -35,7 +35,43 @@
                     </div>
     
                 </div>
-                
+
+                <div class="row mt-5">
+                    <div class="col text-input-wrapper position-relative d-flex flex-column">
+                        <input required autocomplete="off" type="text" name="" id="first_name" class="ps-2">
+                        <label  class="text-input-label text-uppercase position-absolute ps-2 d-flex column-gap-2">
+                            <span class="d-none d-sm-flex">ОБРАЗОВАТЕЛЬНОЕ</span>
+                            <span>УЧРЕЖДЕНИЕ</span>
+                        </label>
+                        <p class="input-help-text text-lowercase py-4">краткое наименование образовательного учреждения</p>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col reg-form-select position-relative d-flex flex-column">
+                        <select name="" id="" class="">
+                            <option value="">РЕГИОН (область, республика, ...)</option>
+                            <option value="">Ташкент</option>
+                            <option value="">Республика Каракалпакстан</option>
+                            <option value="">Андижанская область</option>
+                            <option value="">Бухарская область</option>
+                            <option value="">Джизакская область</option>
+                            <option value="">Кашкадарьинская область</option>
+                            <option value="">Навоийская область</option>
+                            <option value="">Наманганская область</option>
+                            <option value="">Самаркандская область</option>
+                            <option value="">Сурхандарьинская область</option>
+                            <option value="">Сырдарьинская область</option>
+                            <option value="">Ташкентская область</option>
+                            <option value="">Ферганская область</option>
+                            <option value="">Хорезмская область</option>
+                        </select>
+                        <p class="input-help-text text-lowercase py-4">выберите значения</p>
+                    </div>
+                </div>
+
+
+
             </form>
 
         </div>
