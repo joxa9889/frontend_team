@@ -1978,8 +1978,8 @@ progress {
 }
 
 .table-info {
-  --bs-table-color: #000;
-  --bs-table-bg: #cff4fc;
+  --bs-table-color: #fff;
+  --bs-table-bg: #6f7daf;
   --bs-table-border-color: #a6c3ca;
   --bs-table-striped-bg: #c5e8ef;
   --bs-table-striped-color: #000;

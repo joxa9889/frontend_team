@@ -1,0 +1,146 @@
+.home-page {
+    height: 100%;
+    width: 100%;
+    padding: 79px 0px;
+    margin-top: 19px;
+}
+
+.home-page > .container > .hr {
+    margin-top: 23px;
+    width: 80%;
+    height: 19px;
+    background-color: #F5C24D;
+}
+
+.home-page > .container > .hr {
+    margin-top: 50px;
+}
+
+.home-page > .container > .tables-container {
+    margin-top: 108px;
+    width: 100%;
+    overflow: auto;
+}
+
+.home-page > .container > .title {
+    font-size: 50px;
+    margin-top: 36px;
+}
+
+.home-page > .container > .map {
+    margin-top: 36px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home-page > .container > div > .head {
+    font-size: 50px;
+}
+
+/* Uzb Map */
+
+.home-page > .container > .map > .map-uzb {
+    cursor: pointer;
+}
+
+#UZB354:hover{
+  fill:red;
+}
+
+#Karakalpakstan:hover {
+    fill: #00942F;
+}
+
+#Khorezm:hover {
+    fill: #80378A;
+}
+
+#Navoi:hover {
+    fill: #0A72B5;
+}
+
+#Kashkadarya:hover {
+    fill: #F9B234;
+}
+
+#Surkhandarya:hover {
+    fill: #00942F;
+}
+
+#Samarkand:hover {
+    fill: #80378A;
+}
+
+#Jizzakh:hover {
+    fill: #E95E0E;
+}
+
+#Sirdaryo:hover{
+    fill: #00942F;
+}
+
+#Tashkent:hover {
+    fill: #F9B234;
+}
+
+#Namangan:hover {
+    fill: #0574B6;
+}
+
+#Ferghana:hover {
+    fill: #E9011D;
+}
+
+#Andijon:hover {
+    fill: #80378A;
+}
+
+
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 992px) {
+    .home-page > .container > div > .head {
+        font-size: 40px;
+    }
+
+    .home-page {
+        padding: 19px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-page > .container > div > .head {
+        font-size: 30px;
+    }
+
+    .home-page > .container > .map {
+        margin-top: 10px;
+    }
+
+    .home-page > .container > .title {
+        font-size: 50px;
+        margin-top: 16px;
+    }
+
+    .home-page > .container > .tables-container {
+        margin-top: 50px;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .home-page > .container > .map > .map-uzb {
+        margin-top: 20px;
+        height: 40%;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .home-page > .container > .title {
+        font-size: 30px;
+    }
+}

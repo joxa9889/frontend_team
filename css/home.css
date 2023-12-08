@@ -1,0 +1,161 @@
+:root {
+    --yellow: #F5C24D;
+    --black: #000;
+    --red: #ED6059;
+    --green: #2DF57D;
+    --blue: #2A819E;
+    --grey: #737171;
+    --white: #fff;
+}
+
+.home-page {
+    height: 100%;
+    width: 100%;
+    padding: 19px 0px;
+}
+
+.home-page > .container > .banner {
+    display: flex;
+    align-items: center;
+    padding: 0 98px;
+    height: 419px;
+    width: 100%;
+}
+
+.home-page > .container > .mobile {
+    display: none;
+}
+
+.home-page > .container > .banner > .container-texts > .text-container {
+    width: 300px;
+}
+
+.home-page > .container > .banner > .container-texts > .text-container > h1 {
+    font-weight: 900;
+    font-size: 70px;
+}
+
+.home-page > .container > .banner > .container-texts > .text-container > button {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: var(--red);
+    color: white;
+}
+
+.home-page > .container > .row {
+    margin-top: 36px;
+}
+
+.home-page > .container > .row > .reveal {
+    position: relative;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: all 1.5s ease ;
+}
+
+.home-page > .container > .row > .reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.home-page > .container > .row > .col > .card{
+    height: 450px;
+    border-radius: 14px;
+}
+
+.home-page > .container > .row > .col > .yellow {
+    background-color: var(--yellow);
+}
+
+.home-page > .container > .row > .col > .red {
+    background-color: var(--red);
+}
+
+.home-page > .container > .row > .col > .card > .top-it {
+    border-radius: 14px;
+    height: 245px;
+    width: 100%;
+}
+
+.home-page > .container > .row > .col > .card > div > .button {
+    border: none; 
+    border-radius: 10px;
+    margin: 14px 15px;
+    padding: 8px 31px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    font-size: 14px;
+}
+
+.home-page > .container > .row > .col > .card > div > .yellow {
+    background-color: var(--yellow);
+}
+
+.home-page > .container > .row > .col > .card > div > .red {
+    background-color: var(--red);
+}
+
+.home-page > .container > .button-container {
+    margin-top: 24px;
+    display: flex;
+    justify-content: end;
+}
+
+.home-page > .container > .button-container > .button {
+    border: none;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 18px 30px;
+    border-radius: 15px;
+}
+
+@media (max-width: 992px) {
+
+    .home-page > .container > .mobile {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 0 20px 0 20px;
+        height: 419px;
+        width: 100%;
+        color: #fff;
+        position: relative;
+        isolation: isolate;
+    }
+
+    .home-page > .container > .mobile::after {
+        content: '';
+        position: absolute;
+        background: black;
+        z-index: -1;
+        inset: 0;
+        opacity: .5;
+    }
+
+
+    .home-page > .container > .desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .home-page > .container > .banner > .container-texts > .text-container {
+        width: 85%;
+        font-size: 13px;
+    }
+
+    .home-page > .container > .banner > .container-texts > .text-container > h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .home-page > .container > .banner > .container-texts > .text-container > h1 {
+        width: 100%;
+        font-size: 38px;
+    }
+
+    .home-page > .container > .banner > .container-texts > .text-container {
+        font-size: 11px;
+    }
+}
