@@ -133,9 +133,6 @@
     font-weight: 700 !important;
 }
 
-.registration-page .checkbox-input-wrapper {
-
-}
 
 .registration-page .checkbox-input-wrapper .input-w {
     width: 65px;
@@ -146,7 +143,6 @@
 .registration-page .checkbox-input-wrapper .checkbox-rounded {
     width: 65px;
     height: 65px;
-    border-radius: 15px !important;
     outline: 5px solid #F5C24D !important;
     border-radius: 15px;
     background-color: rgba(211, 211, 211, 1);
