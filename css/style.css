@@ -2,6 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
+@import url(./profilePage.css);
+
+*{
+    text-decoration: var(--black);
+    
+}
+
+body{
+    background-image: var(--back-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 :root {
     --yellow: #F5C24D;
@@ -12,9 +24,29 @@
     --grey: #737171;
 
     --back-img: url(/img/back-img.svg);
-
+    --profile_bg-img: url(/img/profile-bg.svg);
 
     --abel-font: 'Abel', sans-serif;
     --exo-font: 'Exo', sans-serif;
     --baloo-font: 'Baloo 2', sans-serif;  
+}
+
+@media (max-width: 1400) {
+    
+}
+
+@media (max-width: 1200) {
+    
+}
+
+@media (max-width: 992) {
+    
+}
+
+@media (max-width: 768) {
+    
+}
+
+@media (max-width: 576) {
+    
 }

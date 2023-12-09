@@ -1,0 +1,18 @@
+.profile-page_header{
+    background-image: var(--profile_bg-img);
+    max-width: 80%;
+    min-height: 300px;
+}
+
+.profile-page_form{
+    background-color: var(--yellow);
+    
+}
+
+.profile-page_form__top{
+    justify-content: space-between;
+}
+
+/* .profile-page__top_right{
+    width: 50%;
+} */
