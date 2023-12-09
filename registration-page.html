@@ -6,10 +6,14 @@
     <title>page-title</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/registation-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 <body>
 
-    <div class="container registration-page">
+<div class="container registration-page">
+    <form action="">
+
+
         <!-- baner of the page start -->
         <div class="banner d-flex flex-column flex-lg-row justify-content-between pt-3 overflow-hidden h-auto">
             <h1 class="ms-lg-5 mt-2 ps-lg-4 pb-5 pb-lg-0 text-center pt-4">РЕГИСТРАЦИЯ</h1>
@@ -21,35 +25,36 @@
         <!-- registraion form start -->
         <div class="form-wrapper px-sm-3 px-md-5">
 
-            <form action="" class="registration-form px-4 px-sm-5 pt-5">
+            <div action="" class="registration-form px-4 px-sm-5 pt-5 pb-3">
                 <div class="row row-gap-5 column-gap-2">
-    
+
                     <div class="col text-input-wrapper position-relative d-flex flex-column">
-                            <input required autocomplete="off" type="text" name="" id="first_name" class="ps-2">
-                            <label  class="text-input-label text-uppercase position-absolute ps-2">имя</label>
+                        <input required autocomplete="off" type="text" name="" id="first_name" class="ps-2">
+                        <label class="text-input-label text-uppercase position-absolute ps-2">имя</label>
                     </div>
-    
+
                     <div class="col text-input-wrapper position-relative d-flex flex-column">
-                            <input required  autocomplete="off" type="text" name="" id="last_name"  class="ps-2">
-                            <label class="text-input-label text-uppercase position-absolute ps-2">ФАМИЛИЯ</label>
+                        <input required autocomplete="off" type="text" name="" id="last_name" class="ps-2">
+                        <label class="text-input-label text-uppercase position-absolute ps-2">ФАМИЛИЯ</label>
                     </div>
-    
+
                 </div>
 
                 <div class="row mt-5">
                     <div class="col text-input-wrapper position-relative d-flex flex-column">
                         <input required autocomplete="off" type="text" name="" id="first_name" class="ps-2">
-                        <label  class="text-input-label text-uppercase position-absolute ps-2 d-flex column-gap-2">
+                        <label class="text-input-label text-uppercase position-absolute ps-2 d-flex column-gap-2">
                             <span class="d-none d-sm-flex">ОБРАЗОВАТЕЛЬНОЕ</span>
                             <span>УЧРЕЖДЕНИЕ</span>
                         </label>
-                        <p class="input-help-text text-lowercase py-4">краткое наименование образовательного учреждения</p>
+                        <p class="input-help-text text-lowercase py-4">краткое наименование образовательного
+                            учреждения</p>
                     </div>
                 </div>
 
                 <div class="row mt-4">
                     <div class="col reg-form-select position-relative d-flex flex-column">
-                        <select name="" id="" class="">
+                        <select name="" id="" class="ps-2">
                             <option value="">РЕГИОН (область, республика, ...)</option>
                             <option value="">Ташкент</option>
                             <option value="">Республика Каракалпакстан</option>
@@ -70,16 +75,169 @@
                     </div>
                 </div>
 
+                <div class="row mt-4 row-gap-lg-5 form-agreement">
 
 
-            </form>
+                    <div class="col mx-3 mb-5 agreement-section d-flex align-items-center justify-content-center">
+                        <h5 class="m-0 text-uppercase">ВЫБЕРИТЕ СТАТУС, ВЫ СОГЛАШАЕТЕСЬ С УСЛОВИЯМИ БОНУСНОЙ
+                            ПРОГРАММЫ</h5>
+                    </div>
+
+
+                    <div class="checkbox-input-wrapper my-4 my-lg-0 col-12 d-flex column-gap-4 align-items-center">
+                        <div class="">
+                            <div class="position-relative input-w">
+                                <div class="checkbox-rounded position-absolute"></div>
+                                <input type="checkbox" class="position-absolute z-2" name="" id="">
+                                <img src="/img/registraion-page/registration-check-tick.svg"
+                                     class="tick position-absolute" alt="">
+                            </div>
+                        </div>
+                        <button class="text-capitalize btn btn-primary d-block d-lg-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseExample0" aria-expanded="false"
+                                aria-controls="collapseExample">
+                            <i class="bi bi-eye-fill me-2 text-white"></i>условия соглашения
+                        </button>
+                        <label class="d-none d-lg-block" for="">НЕТ</label>
+                    </div>
+                    <div class="col-12 collapse" id="collapseExample0">
+                        <div class="conditions d-block d-lg-none p-3">
+                            НЕТ
+                        </div>
+                    </div>
+
+
+                    <div class="checkbox-input-wrapper my-4 my-lg-0 col-12 d-flex column-gap-4 align-items-center">
+                        <div class="">
+                            <div class="position-relative input-w">
+                                <div class="checkbox-rounded position-absolute"></div>
+                                <input type="checkbox" class="position-absolute z-2" name="" id="">
+                                <img src="/img/registraion-page/registration-check-tick.svg"
+                                     class="tick position-absolute" alt="">
+                            </div>
+                        </div>
+                        <button class="text-capitalize btn btn-primary d-block d-lg-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false"
+                                aria-controls="collapseExample">
+                            <i class="bi bi-eye-fill me-2 text-white"></i>условия соглашения
+                        </button>
+                        <label class=" d-none d-lg-block" for="">УЧАСТНИК – работы на конкурсы отправляются только от
+                            имени одного Автора, но могут быть указаны разные Руководители работ</label>
+                    </div>
+                    <div class="col-12 collapse" id="collapseExample1">
+                        <div class="conditions d-block d-lg-none p-3">
+                            УЧАСТНИК – работы на конкурсы отправляются только от имени одного Автора, но могут быть
+                            указаны разные Руководители работ
+                        </div>
+                    </div>
+
+
+                    <div class="checkbox-input-wrapper my-4 my-lg-0 col-12 d-flex column-gap-4 align-items-center">
+                        <div class="">
+                            <div class="position-relative input-w">
+                                <div class="checkbox-rounded position-absolute"></div>
+                                <input type="checkbox" class="position-absolute z-2" name="" id="">
+                                <img src="/img/registraion-page/registration-check-tick.svg"
+                                     class="tick position-absolute" alt="">
+                            </div>
+                        </div>
+                        <button class="text-capitalize btn btn-primary d-block d-lg-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false"
+                                aria-controls="collapseExample">
+                            <i class="bi bi-eye-fill me-2 text-white"></i>условия соглашения
+                        </button>
+                        <label class=" d-none d-lg-block" for="">РУКОВОДИТЕЛЬ РАБОТ – работы на конкурсы могут
+                            отправляться от разных Авторов, но от одного Руководителя</label>
+                    </div>
+                    <div class="col-12 collapse" id="collapseExample2">
+                        <div class="conditions d-block d-lg-none p-3">
+                            РУКОВОДИТЕЛЬ РАБОТ – работы на конкурсы могут отправляться от разных Авторов, но от одного
+                            Руководителя
+                        </div>
+                    </div>
+
+
+                    <div class="checkbox-input-wrapper my-4 my-lg-0 col-12 d-flex column-gap-4 align-items-center">
+                        <div class="">
+                            <div class="position-relative input-w">
+                                <div class="checkbox-rounded position-absolute"></div>
+                                <input type="checkbox" class="position-absolute z-2" name="" id="">
+                                <img src="/img/registraion-page/registration-check-tick.svg"
+                                     class="tick position-absolute" alt="">
+                            </div>
+                        </div>
+                        <button class="text-capitalize btn btn-primary d-block d-lg-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false"
+                                aria-controls="collapseExample">
+                            <i class="bi bi-eye-fill me-2 text-white"></i>условия соглашения
+                        </button>
+                        <label class=" d-none d-lg-block" for="">ОРГАНИЗАТОР ОТ ОБРАЗОВАТЕЛЬНОЙ ОРГАНИЗАЦИИ – работы на
+                            конкурсы могут отправляться от разных Авторов и разных Руководителей, но от одной
+                            образовательной организации</label>
+                    </div>
+
+
+                    <div class="col-12 collapse" id="collapseExample3">
+                        <div class="conditions d-block d-lg-none p-3">
+                            ОРГАНИЗАТОР ОТ ОБРАЗОВАТЕЛЬНОЙ ОРГАНИЗАЦИИ – работы на конкурсы могут отправляться от разных
+                            Авторов и разных Руководителей, но от одной образовательной организации
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 my-4 my-lg-0 agreement-section d-flex align-items-center justify-content-center">
+                        <h5 class="m-0 text-uppercase">Согласие</h5>
+                    </div>
+
+
+                    <div class="checkbox-input-wrapper my-4 my-lg-0 col-12 d-flex column-gap-4 align-items-center">
+                        <div class="">
+                            <div class="position-relative input-w">
+                                <div class="checkbox-rounded position-absolute"></div>
+                                <input type="checkbox" class="position-absolute z-2" name="" id="">
+                                <img src="/img/registraion-page/registration-check-tick.svg"
+                                     class="tick position-absolute" alt="">
+                            </div>
+                        </div>
+                        <button class="text-capitalize btn btn-primary d-block d-lg-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false"
+                                aria-controls="collapseExample">
+                            <i class="bi bi-eye-fill me-2 text-white"></i>условия соглашения
+                        </button>
+                        <label class=" d-none d-lg-block" for="">Даю согласие образовательному порталу "НИКА" на
+                            обработку моих персональных данных *
+                            Нажимая кнопку «РЕГИСТРАЦИЯ», я принимаю условия Пользовательского соглашения и даю своё
+                            согласие Образовательному порталу «BEFIRST» (сайт https://оценика.уз) на обработку моих
+                            персональных данных, в соответствии с ...</label>
+                    </div>
+                    <div class="col-12 collapse" id="collapseExample4">
+                        <div class="conditions d-block d-lg-none p-3">
+                            Даю согласие образовательному порталу "НИКА" на обработку моих персональных данных *
+                            Нажимая кнопку «РЕГИСТРАЦИЯ», я принимаю условия Пользовательского соглашения и даю своё
+                            согласие Образовательному порталу «BEFIRST» (сайт https://оценика.уз) на обработку моих
+                            персональных данных, в соответствии с ...
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
 
         </div>
-        
 
-    </div>
+        <div class="row my-5 bg-transparent d-flex justify-content-center">
+            <div class="col text-center">
+                <button class="btn submit-button btn-success" type="submit">ГОТОВО</button>
 
-    
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+            </div>
+        </div>
+
+    </form>
+
+</div>
+
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
