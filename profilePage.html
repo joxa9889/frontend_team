@@ -21,82 +21,105 @@
 
 <body>
 
-    <div class="container profile-page">
-        <div class="profile-page_header card">
-            <div class="card-body">
-                <h5 class="card-title">Personal Profile</h5>
+    <div id="profile-page" class="container profile-page">
+        <form class="">
+
+            <div class="profile-page_header banner">
+                <div class="card-body">
+                    <h1 class="card-title mt-2 pt-5 ps-5 ms-5">ЛИЧНЫЙ КАБИНЕТ</h1>
+                </div>
             </div>
-        </div>
 
-        <div class="profile-page_form card mt-4">
-            <div class="card-body center-block ml-3">
-                <h6 class="card-title">Personal Data</h6>
+            <div class="profile-page_form card mt-4 ps-5">
+                <div class="card-body">
+                    <h2 class="card-title">Личные данные</h2>
+                </div>
 
-                <form class="d-flex row center-block">
-                    <div class="profile-page_form__top d-flex  col-9">
-                        <div class="profile-page__top_right d-flex row col-6 ">
-                            <img src="..." class="img-fluid" alt="...">
-                            <div class="gender_list  ">
-
-                                <input type="radio" class="btn-check" name="flexRadioDefault" id="option2"
-                                    autocomplete="off" checked>
-                                <label class="btn btn-secondary" for="option2">Male</label>
-
-                                <input type="radio" class="btn-check" name="flexRadioDefault" id="option4"
-                                    autocomplete="off">
-                                <label class="btn btn-secondary" for="option4">Female</label>
-
-                            </div>
+                <div class="profile-page_form__top d-flex  col-12">
+                    <div class="profile-page__top_right d-flex flex-column ">
+                        <div class="card personal-image">
+                            <label class="card-img-top" for="formFile">
+                                <img src="/" id="personal-img" class="img-fluid" alt="photo">
+                                <div class="personal-img-title" id="for_putting-personal-img">ФОТО</div>
+                            </label>
+                            <div class="card-body mt-3">
+                                <label for="formFile" class="dowload-img form-label">Загрузить фото</label>
+                                <input  required="true" class="form-control" type="file" id="formFile">
+                                </div>
                         </div>
 
-                        <div class="profile-page__top_left d-flex row col-10">
-                            <div class="mb-3">
-                                <input type="text" placeholder="Your name" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
+                        <div class="gender-logo_list d-flex flex-row justify-content-evenly">
+                            <div class="female-check  d-flex flex-column ">
+                                <input  required="true" type="radio" class="btn-check" name="flexRadioDefault" id="female"
+                                autocomplete="off">
+                            <label class="d-flex flex-column align-items-center " for="female">
+                                <img src="/img/female-logo.png" alt="female logo">
+                                <img src="/img/unchecked-logo.png" alt="unchecked logo">
+                            </label>
                             </div>
 
-                            <div class="mb-3">
-                                <input type="text" placeholder="Your Surname" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
-                            </div>
+                            <div class="male-check  d-flex flex-column">
+                                <input  required="true" type="radio" class="btn-check" name="flexRadioDefault" id="male"
+                                autocomplete="off">
+                            <label class="d-flex flex-column align-items-center" for="male">
+                                <img src="/img/male-logo.png" alt="male logo">
+                                <img src="/img/unchecked-logo.png" alt="unchecked logo">
+                            </label>
 
-                            <div class="mb-3">
-                                <input type="tel" placeholder="Your telephone number" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
-                            </div>
-
-                            <div class="mb-3">
-                                <input type="email" placeholder="Your E-mail" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="profile-page_form__middle d-flex col col-8 mb-5">
-                        <input type='text' class="form-control" id='picker'>
 
-                        <div class="">
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                    <div class="profile-page__top_left d-flex justify-content-between flex-column col-7 me-5">
+                        <div class="mb-3">
+                            <input  required="true" type="text" placeholder="Your name" class="form-control" id="nameInput"
+                                aria-describedby="nameHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <input  required="true" type="text" placeholder="Your Surname" class="form-control" id="surnameInput"
+                                aria-describedby="textHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <input  required="true" type="tel" placeholder="Your telephone number" class="form-control" id="telephoneInput"
+                                aria-describedby="telHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <input  required="true" type="email" placeholder="Your E-mail" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
                         </div>
                     </div>
+                </div>
+                
+                <div class="profile-page_form__middle d-flex col-12 mt-5 pe-5 justify-content-between">
+                    <input  required="true" type='text' class="form-control" placeholder="Дата рождения" id='picker'>
+                    <div class="password col-6 d-flex flex-row justify-content-end">
+                        <input  required="true" name="password" type="password" value="" class="input form-control" id="password" placeholder="Ваш пароль" required="true" aria-label="password" aria-describedby="basic-addon1" />
+                    <span class="input-group-text" onclick="password_show_hide();">
+                        <img src="/img/eye.svg" class="" id="show_eye"></img>
+                        <img src="/img/eye-off.svg" class="" id="hide_eye"></img>
+                    </span>
+                    </div>
+                </div> 
+                
+                <div class="profile-page_form__bottom d-flex flex-column col-12 mt-5 pe-5 me-4">
+                    <input  required="true" type="text" placeholder="Ваш адрес" id="addresInput" class="input form-control">
                     
-                    <div class="profile-page_form__bottom">
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="mb-3 form-check mt-5 d-flex justify-content-between flex-row">
+                        <div class="checkbox-for-emails d-flex justify-content-between flex-row col-7">
+                            <input  type="checkbox" class="" value="" id="sent-mail-check">
+                            <label class="form-check-label" for="sent-mail-check">Хочу получать письма с новостями на электронный адрес</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>                    
-                </form>
+                        <button type="submit" class="btn btn-primary">СОХРАНИТЬ</button>
+                    </div>
+                </div>                    
             </div>
-        </div>
-
+    </form>
     </div>
-    <script type="text/javascript">
-        $(function () {
-            $('#picker').datetimepicker();
-        });
-    </script>
+
+    <script src="/js/profilePage.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
