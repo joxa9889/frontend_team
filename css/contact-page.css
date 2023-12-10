@@ -71,18 +71,27 @@
     outline: none !important;
 }
 
-.contact-form button{
+.contact-page .contact-form button{
     background-color: var(--green) !important;
     outline: none;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     transition: 250ms all;
 }
-.contact-form button:hover{
+.contact-page .contact-form button:hover{
     background-color: #29d36d !important;
+    cursor: pointer !important;
 }
 
+.contact-page .references a{
+    font-family: var(--register-body-font) !important;
+    color: #000;
+    text-decoration: none;
+}
 
+.contact-page .references>a:hover{
+    cursor:  pointer !important;
+}
 
 
 /*.contact-page .banner span {*/
