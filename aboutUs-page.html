@@ -177,20 +177,7 @@
           <h2 class="card-title">некоторые  преимущества</h2>
           <h4 class="card-subtitle mb-2 text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
         </div>
-        <div class="card-body">
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="col g-0">
-                  <div class="row-md-3 d-flex">
-                    <img src="/img/apout-page/advantage-list/Group1.png" class="img-fluid rounded-start" alt="...">
-                    <h3 class="card-title">ПОЛНОСТЬЮ ОТВЕТСТВЕННЫЙ</h3>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <p class="card-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="card-body d-flex flex-row flex-wrap justify-content-between">
         </div>
       </div>
 
@@ -199,39 +186,6 @@
 
 <script src="/js/aboutUs.js"></script>
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-<script>
-var multipleCardCarousel = document.querySelector(
-  "#carouselExampleControls"
-);
-if (window.matchMedia("(min-width: 768px)").matches) {
-  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-    interval: false,
-  });
-  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-  var cardWidth = $(".carousel-item").width();
-  var scrollPosition = 0;
-  $("#carouselExampleControls .carousel-control-next").on("click", function () {
-    if (scrollPosition < carouselWidth - cardWidth * 4) {
-      scrollPosition += cardWidth;
-      $("#carouselExampleControls .carousel-inner").animate(
-        { scrollLeft: scrollPosition },
-        600
-      );
-    }
-  });
-  $("#carouselExampleControls .carousel-control-prev").on("click", function () {
-    if (scrollPosition > 0) {
-      scrollPosition -= cardWidth;
-      $("#carouselExampleControls .carousel-inner").animate(
-        { scrollLeft: scrollPosition },
-        600
-      );
-    }
-  });
-} else {
-  $(multipleCardCarousel).addClass("slide");
-}
-</script>
 
 </body>
 </html>
