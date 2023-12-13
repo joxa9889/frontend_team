@@ -44,19 +44,23 @@
 
 /* end of banner */
 
+/* form style */
 .registration-page .form-wrapper {
     background-color: #f0f0f0;
 }
 
-
-.registration-page .registration-form .text-input-wrapper > label {
+.registration-page .registration-form .text-input-wrapper > label{
     color: #494949 !important;
     font-family: var(--register-body-font) !important;
     font-size: min(4.5vw, 20px);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
+}
+
+.registration-page .registration-form .text-input-wrapper > label.text-input-label {
     left: 12px;
+    font-weight: 400;
     transform: translateY(22px);
     transition: 250ms ease;
     pointer-events: none;
@@ -67,7 +71,6 @@
     height: 65px;
     color: #494949 !important;
     font-family: var(--register-body-font) !important;
-
     font-style: normal;
     font-weight: 400;
 }
@@ -78,14 +81,23 @@
     background-color: rgba(211, 211, 211, 1);
 }
 
+.registration-page .text-input-wrapper>input[type='file']::file-selector-button{
+    display: none;
+  }
+
+
 .registration-page .text-input-wrapper > input:valid {
     outline: none;
     border: var(--green) 1px solid;
 }
 
 
-.registration-page .text-input-wrapper > input:focus ~ label.text-input-label,
-.registration-page .text-input-wrapper > input:valid ~ label.text-input-label {
+.registration-page .text-input-wrapper > input[type='text']:focus ~ label.text-input-label,
+.registration-page .text-input-wrapper > input[type='text']:valid ~ label.text-input-label,
+.registration-page .text-input-wrapper > input[type='email']:focus ~ label.text-input-label,
+.registration-page .text-input-wrapper > input[type='email']:valid ~ label.text-input-label,
+.registration-page .text-input-wrapper > input[type='tel']:focus ~ label.text-input-label,
+.registration-page .text-input-wrapper > input[type='tel']:valid ~ label.text-input-label{
     transform: translateY(-25px);
     padding: 0 3px;
     color: var(--black) !important;
