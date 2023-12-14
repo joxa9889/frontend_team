@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Registration</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/registration-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<div class="container registration-page">
+    <form action="" method="post">
+
+
+        <!-- banner of the page start -->
+        <div class="banner d-flex flex-column flex-lg-row justify-content-between pt-3 overflow-hidden h-auto">
+            <h1 class="ms-lg-5 mt-2 ps-lg-4 pb-5 pb-lg-0 text-center pt-4">РЕГИСТРАЦИЯ</h1>
+            <img class="position-relative d-none d-lg-block" src="img/registration-page/registration-header.svg" alt="">
+        </div>
+        <!-- banner of the page end -->
+
+
+        <!-- registration form start -->
+        <div class="form-wrapper px-sm-3 px-md-5">
+
+            <div action="" class="registration-form px-4 px-sm-5 pt-5 pb-3">
+                <div class="row row-gap-3 column-gap-2 pb-2">
+
+                    <div class="col text-input-wrapper position-relative d-flex flex-column">
+                        <input required autocomplete="off" type="text" name="" id="first_name" class="ps-2">
+                        <label class="text-input-label text-uppercase position-absolute ps-2">имя</label>
+                        <p class="input-help-text text-lowercase py-2">необходимый</p>
+                    </div>
+
+                    <div class="col text-input-wrapper position-relative d-flex flex-column">
+                        <input required autocomplete="off" type="text" name="" id="last_name" class="ps-2">
+                        <label class="text-input-label text-uppercase position-absolute ps-2">ФАМИЛИЯ</label>
+                        <p class="input-help-text text-lowercase py-2">необходимый</p>
+                    </div>
+
+                </div>
+
+                <div class="row row-gap-3 column-gap-2 pb-2">
+
+                    <div class="col text-input-wrapper position-relative d-flex flex-column">
+                        <input required autocomplete="off" type="email" name="" id="email" class="ps-2">
+                        <label for="email" class="text-input-label text-uppercase position-absolute ps-2">почта</label>
+                        <p class="input-help-text text-lowercase py-2">необходимый</p>
+                    </div>
+
+                    <div class="col text-input-wrapper position-relative d-flex flex-column pb-4 pb-md-0">
+                        <input required autocomplete="off" type="tel" name="" id="phone-number" class="ps-2">
+                        <label for="phone-number" class="text-input-label text-uppercase position-absolute ps-2">номер телефона</label>
+                    </div>
+
+                </div>
+
+                <div class="row row-gap-4 column-gap-2">
+                    <div class="col-12 col-md-4 text-input-wrapper d-flex flex-column">
+                        <label for="profile-img" class="img-input-label text-uppercase ps-2 mb-2 pt-1">фото</label>
+                        <input required autocomplete="off" accept="image/*" type="file" name="" id="profile-img" class="ps-2">
+                    </div>
+
+                    <div class="col-12 col-md text-input-wrapper d-flex flex-column mb-4">
+                        <label for='birth-date-input' class="birth-date-input-label text-uppercase ps-2 mb-2 pt-2">дата рождения</label>
+                        <input required autocomplete="off" type="date" name="" id="birth-date-input" class="ps-2 pe-3" placeholder="дата рождения">
+                        <p class="input-help-text text-lowercase py-2">необходимый</p>
+                    </div>
+
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col reg-form-select position-relative d-flex flex-column text-uppercase">
+                        <select name="" id="" class="ps-2">
+                            <option selected value="">пол</option>
+                            <option value="">мальчик</option>
+                            <option value="">девочка</option>
+                            <option value="">военный вертолёт</option>
+                        </select>
+                        <p class="input-help-text text-lowercase py-4">выберите пол(необходимый)</p>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col text-input-wrapper position-relative d-flex flex-column">
+                        <input required autocomplete="off" type="text" name="" id="first_name" class="ps-2">
+                        <label class="text-input-label text-uppercase position-absolute ps-2 d-flex column-gap-2">
+                            <span class="d-none d-sm-flex">ОБРАЗОВАТЕЛЬНОЕ</span>
+                            <span>УЧРЕЖДЕНИЕ</span>
+                        </label>
+                        <p class="input-help-text text-lowercase py-4">краткое наименование образовательного
+                            учреждения</p>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col reg-form-select position-relative d-flex flex-column">
+                        <select name="" id="" class="ps-2">
+                            <option value="">РЕГИОН (область, республика, ...)</option>
+                            <option value="">Ташкент</option>
+                            <option value="">Республика Каракалпакстан</option>
+                            <option value="">Андижанская область</option>
+                            <option value="">Бухарская область</option>
+                            <option value="">Джизакская область</option>
+                            <option value="">Кашкадарьинская область</option>
+                            <option value="">Навоийская область</option>
+                            <option value="">Наманганская область</option>
+                            <option value="">Самаркандская область</option>
+                            <option value="">Сурхандарьинская область</option>
+                            <option value="">Сырдарьинская область</option>
+                            <option value="">Ташкентская область</option>
+                            <option value="">Ферганская область</option>
+                            <option value="">Хорезмская область</option>
+                        </select>
+                        <p class="input-help-text text-lowercase py-4">выберите значения (необходимый)</p>
+                    </div>
+                </div>
+
+                <div class="row mt-4 row-gap-lg-5 form-agreement">
+                    <div class="col-12 my-4 my-lg-0 agreement-section d-flex align-items-center justify-content-center">
+                        <h5 class="m-0 text-uppercase">Согласие</h5>
+                    </div>
+
+
+                    <div class="checkbox-input-wrapper my-4 my-lg-0 col-12 d-flex column-gap-4 align-items-center">
+                        <div class="">
+                            <div class="position-relative input-w">
+                                <div class="checkbox-rounded position-absolute"></div>
+                                <input type="checkbox" class="position-absolute z-2" name="" id="">
+                                <img src="img/registration-page/registration-check-tick.svg"
+                                     class="tick position-absolute" alt="">
+                            </div>
+                        </div>
+                        <button class="text-capitalize btn btn-primary d-block d-lg-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false"
+                                aria-controls="collapseExample">
+                            <i class="bi bi-eye-fill me-2 text-white"></i>условия соглашения
+                        </button>
+                        <label class=" d-none d-lg-block" for="">Даю согласие образовательному порталу "НИКА" на
+                            обработку моих персональных данных *
+                            Нажимая кнопку «РЕГИСТРАЦИЯ», я принимаю условия Пользовательского соглашения и даю своё
+                            согласие Образовательному порталу «BEFIRST» (сайт https://оценика.уз) на обработку моих
+                            персональных данных, в соответствии с ...</label>
+                    </div>
+                    <div class="col-12 collapse" id="collapseExample4">
+                        <div class="conditions d-block d-lg-none p-3">
+                            Даю согласие образовательному порталу "НИКА" на обработку моих персональных данных *
+                            Нажимая кнопку «РЕГИСТРАЦИЯ», я принимаю условия Пользовательского соглашения и даю своё
+                            согласие Образовательному порталу «BEFIRST» (сайт https://оценика.уз) на обработку моих
+                            персональных данных, в соответствии с ...
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="row my-5 bg-transparent d-flex justify-content-center">
+            <div class="col text-center">
+                <button class="btn submit-button btn-success" type="submit">ГОТОВО</button>
+
+            </div>
+        </div>
+
+    </form>
+
+</div>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+    var yyyy = today.getFullYear();
+    var yyyy2 = today.getFullYear() - 18;  
+
+    if (dd < 10) {
+    dd = '0' + dd;
+    }
+
+    if (mm < 10) {
+    mm = '0' + mm;
+    } 
+        
+    today = yyyy + '-' + mm + '-' + dd;
+    min_age = yyyy2 + '-' + mm + '-' + dd;
+    document.getElementById("birth-date-input").setAttribute("max", today);
+    document.getElementById("birth-date-input").setAttribute("min", min_age);
+</script>
+</body>
+</html>
