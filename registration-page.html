@@ -65,7 +65,7 @@
 
                     <div class="col-12 col-md text-input-wrapper d-flex flex-column mb-4">
                         <label for='birth-date-input' class="birth-date-input-label text-uppercase ps-2 mb-2 pt-2">дата рождения</label>
-                        <input required autocomplete="off" type="date" name="" id="birth-date-input" class="ps-2 pe-3" placeholder="дата рождения" min='2000-01-01'>
+                        <input required autocomplete="off" type="date" name="" id="birth-date-input" class="ps-2 pe-3" placeholder="дата рождения">
                         <p class="input-help-text text-lowercase py-2">необходимый</p>
                     </div>
 
@@ -286,6 +286,7 @@
     var dd = today.getDate();
     var mm = today.getMonth() + 1; //January is 0!
     var yyyy = today.getFullYear();
+    var yyyy2 = today.getFullYear() - 18;  
 
     if (dd < 10) {
     dd = '0' + dd;
@@ -296,7 +297,9 @@
     } 
         
     today = yyyy + '-' + mm + '-' + dd;
+    min_age = yyyy2 + '-' + mm + '-' + dd;
     document.getElementById("birth-date-input").setAttribute("max", today);
+    document.getElementById("birth-date-input").setAttribute("min", min_age);
 </script>
 </body>
 </html>
