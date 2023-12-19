@@ -1,5 +1,5 @@
 const aboutUsCardAdvantages=document.querySelector('.advantages .card-body');
-const aboutUsIMGSLink="./img/apout-page/advantage-list/";
+const aboutUsIMGSLink="/img/apout-page/advantage-list/";
       
 const advantagesList = [
     {

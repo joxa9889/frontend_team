@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
 
 
     
@@ -18,7 +20,93 @@
 
 <body>
 
-    <div id="profile-page" class="container profile-page">
+    <header class="header sticky-top">
+        <nav class="navbar-1 bg-secondary">
+          <div class="container">
+            <div class="navbar navbar-expand-lg navbar-light ">
+              <ul class="nav justify-content-end">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="/img/header/russian_logo.png" alt="" srcset="">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    
+                  </ul>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ВХОД</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">РЕГИСТРАЦИЯ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+        <nav class="navbar-2">
+          <div class="container">
+    
+            <div class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand me-1" href="#"><img src="/img/log-0 2.png" alt="site logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <form class="d-flex" role="search">
+                  <button class="btn btn-outline-success" type="submit"><img src="/img/white-search.png"
+                      alt="search icon"></button>
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+    
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Работы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Правило</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Результаты </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Конкурс</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Эксперты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">О нас</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Личный кабинет</a>
+                  </li>
+    
+    
+                  <li class="nav-item" id="nav-triple-dot"><a class="nav-link " href="#">&#10247;</a></li>
+                </ul>
+    
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <section id="profile-page" class="container profile-page">
         <form class="">
 
             <div class="profile-page_header banner">
@@ -114,12 +202,72 @@
                 </div>                    
             </div>
     </form>
-    </div>
+</section>
 
-    <script src="/js/profilePage.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <footer class="footer mt-5">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top justify-content-center nav">
+    
+            <div class="fisrt-footer-column">
+                        <div class="col mb-3">
+                            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                                <img src="/img/log-0 2.png" alt="site logo">
+                            </a>
+                            <p class="">BeFirst 2023 ©</p>
+                        </div>
+    
+                    </div>
+                    <div class="col mb-3">
+                    </div>
+    
+    
+            <div class="col mb-3">
+              <h5>Карта сайта</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Главная</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Результаты</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">О нас</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Правила</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Работы</a></li>
+              </ul>
+            </div>
+    
+            <div class="col mb-3">
+              <h5>Контакты</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">+998 71 234 56 78</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">befirst@gmail.com</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">г. Ташкент, Юнусабадский район, ул Узбекистан</a></li>
+              </ul>
+            </div>
+    
+            <div class="col mb-3">
+              <h5>Мы в соцсетях:</h5>
+              <ul class="nav flex-row justify-content-between">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="/img/footer/facebook-logo.png" alt="facebook-logo"></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="/img/footer/insta-logo.png" alt="instagram-logo"></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="/img/footer/linkedin-logo.png" alt="linkedin-logo"></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="/img/footer/tg-logo.png" alt="telegram-logo"></a></li>
+    
+              </ul>
+            </div>
+    
+            <div class="col mb-3"></div>
+            <div class="last-footer-column">
+              <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                  <img src="/img/log-0 2.png" alt="site logo">
+                </a>
+                <p class="">BeFirst 2023 ©</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
 

@@ -23,8 +23,8 @@ body{
     --blue: #2A819E;
     --grey: #737171;
 
-    --back-img: url(../img/back-img.svg);
-    --profile_bg-img: url(../img/profile-bg.svg);
+    --back-img: url(/img/back-img.svg);
+    --profile_bg-img: url(/img/profile-bg.svg);
 
     --abel-font: 'Abel', sans-serif;
     --exo-font: 'Exo', sans-serif;
