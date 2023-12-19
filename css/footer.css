@@ -18,7 +18,7 @@ footer .last-footer-column p{
     line-height: normal;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     footer .fisrt-footer-column,
 footer .fisrt-footer-column+.col{
     display: block;

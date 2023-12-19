@@ -38,6 +38,10 @@ header .navbar-1{
     background: #F5C24D;
 }
 
+.navbar-2 a{
+    text-align: center;
+}
+
 .navbar-2 .navbar-brand{
     border-right: 2px solid #E5E2E2;
     padding-right: 2rem;
@@ -59,8 +63,6 @@ header .navbar-1{
     transition: right 0.2s ease-in-out;
 
 }
-
-
 
 @media screen and (max-width:1200px) {
     .navbar-2 ul li:last-child{

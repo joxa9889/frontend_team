@@ -22,7 +22,7 @@
 
 .profile-page_form{
     width: 71.375rem;
-    height: 61.0625rem;
+    /* height: 61.0625rem; */
     flex-shrink: 0;
     background-color: var(--yellow);
     
@@ -181,3 +181,13 @@ height: 4.0625rem;
     display: none;
 }
 
+@media screen and (max-width:1200px) {
+.profile-page_header,
+.profile-page_form{
+    width: inherit;
+}    
+}
+
+@media screen and (max-width:778px) {
+
+}
