@@ -118,10 +118,7 @@
 
 
 
-
-
-
-.progress-container {
+.results-page > .container > .d-lg-flex > .d-sm-flex > .progress-container{
     display: flex;
     border-radius: 8px;
     width: 198px;
@@ -129,7 +126,7 @@
     align-items: center;
 }
 
-.circular-progress {
+.results-page > .container > .d-lg-flex > .d-sm-flex > .progress-container .circular-progress {
     position: relative;
     height: 160px;
     width: 160px;
@@ -140,7 +137,7 @@
     justify-content: center;
 }
 
-.circular-progress::before {
+.results-page > .container > .d-lg-flex > .d-sm-flex > .progress-container > .circular-progress::before {
     content: "";
     position: absolute;
     height: 120px;
@@ -150,18 +147,14 @@
 
 }
 
-.progress-value {
+.results-page > .container > .d-lg-flex > .d-sm-flex > .progress-container > .circular-progress > .progress-value {
     position:  relative;
     font-size: 30px;
     font-weight: 600;
     color: var(--yellow);
 }
 
-.text {
-    font-size: 30px;
-    font-weight: 500;
-    color: #606060;
-}
+
 
 @media (max-width: 1200px) {
     .results-page > .container > .card > .d-flex > .h-100 > .card-body > .card-title {
